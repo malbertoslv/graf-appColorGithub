@@ -1,0 +1,36 @@
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.preview-box {
+  width: 100%;
+  transition: background-color 0.2s ease;
+}
+
+.form-control-color {
+  width: 45px !important;
+  height: 45px !important;
+  cursor: pointer;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.slider-red::-webkit-slider-thumb { background: #dc3545; }
+.slider-green::-webkit-slider-thumb { background: #198754; }
+.slider-blue::-webkit-slider-thumb { background: #0d6efd; }
+
+.btn-gradient {
+  background: linear-gradient(45deg, #11998e, #38ef7d);
+  border: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border-radius: 0.85rem;
+}
+
+.btn-gradient:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(56, 239, 125, 0.4);
+}
